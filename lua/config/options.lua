@@ -5,5 +5,6 @@
 -- Disable LazyVim auto format
 vim.g.autoformat = false
 
-vim.g.lazyvim_python_lsp = "pylyzer"
+-- Add Python lsp capability
+vim.g.lazyvim_python_lsp = "pylsp"
 vim.g.lazyvim_python_ruff = "ruff"
