@@ -3,7 +3,18 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
-        pylsp = {},
+        pylsp = {
+          settings = {
+            pylsp = {
+              plugins = {
+                pycodestyle = {
+                  ignore = {"W391"},
+                  maxLineLength = 108,
+                }
+              }
+            }
+          }
+        }
       }
     }
   },
