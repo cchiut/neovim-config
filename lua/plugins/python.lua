@@ -21,7 +21,13 @@ return {
   {
     "linux-cultist/venv-selector.nvim",
     opts = {
-      hatch_path = "~/Library/Application Support/hatch/env/virtual",
+      settings = {
+        search = {
+          fix_hatch = {
+            command = "fd --full-path --color never -E /proc -E '*-build*' /bin/python$ '/Users/cchiut/Library/Application Support/hatch/env/virtual/'"
+          }
+        }
+      }
     },
   },
 }
