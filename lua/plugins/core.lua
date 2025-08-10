@@ -11,6 +11,14 @@ return {
     }
   },
 
+  -- make it transparent for catppuccin color schema
+  {
+    "catppuccin/nvim",
+    opts = {
+      transparent_background = true,
+    }
+  },
+
   -- change color schema
   {
     "LazyVim/LazyVim",
